@@ -2,7 +2,7 @@ from debian:latest
 user root
 workdir /root
 run DEBIAN_FRONTEND=noninteractive \
-    sudo apt update \
+    apt update \
     apt-get install -y neofetch qemu-system-x86 wget curl \
     wget https://dl.malwarewatch.org/windows/Windows-XP.iso \
     qemu-img create -f qcow2 xp.qcow2 50G
